@@ -1,60 +1,50 @@
-// arrays
-const Cities = ["Karachi" , " Multan" , "Lahore"];
-document.write(Cities);
-document.write("<br>" + "<br>");
-const cars = []
-cars [0]= "BMW";
-cars [1]= "Volvo";
-cars [2]= "Suzuki";
-document.write(cars);
-document.write("<br>" + "<br>");
-document.write (cars[1]);
-document.write("<br>" + "<br>");
-var info = ["Kulsoom" , "15", "BahriaCollegeKarsaz", "Thats True"]
-document.write(info);
-document.write("<br>" + "<br>");
-info[6] = "Wow"
-document.write(info);
-document.write("<br>" + "<br>");
-const vegetables = ["Tomato" , " Potato" , " Onion"];
-// change all the elements into strings "toString()"
-const myList = vegetables.toString();
-document.write(myList);
-document.write("<br>" + "<br>");
-// at method reurns the index elements
-document.write("elements at 2nd index is" , vegetables.at(2));
-document.write("<br>" + "<br>");
-// push method element to last me phenk deta hai
-var  subject = ["Chemisty" , " Maths"]
-subject.push("Pakistan Studies")
-document.write(subject);
-document.write("<br>" + "<br>");
-// joins method  join array elements into strings
-document.write("joined Array with" ,vegetables.join("-"));
-// The pop() method removes (pops) the last element of an array.
-document.write("<br>" + "<br>");
-const sportsthings= ["tabletennis", "badminton", "bat", "ball"];
-sportsthings.pop();
-document.write(sportsthings);
-document.write("<br>" + "<br>");
-// Shift (remove) the first element of the array:
-var students = ["Ali", "Fatima", "Zain", "Maha"];
-var removedStudent = students.shift();
-document.write("Removed student: " + removedStudent);
-document.write("<br>" + "<br>");
-//   The unshift() method adds new elements to the beginning of an array.
-let numbers = [3, 4, 5];
-numbers.unshift(1, 2);
-document.write(numbers);
-document.write("<br>" + "<br>");
-// slice() is used to take a part of an array or string without changing the original.
-let fruity = ["apple", "banana", "cherry", "date"];
-let result = fruity.slice(1, 3);
-document.write(result); 
-document.write("<br>" + "<br>");
-// the splice() method is used to add, remove, or replace elements in an array.
-// The reverse() method reverses the order of the elements in an array.
-// The sort() method sorts the elements as strings in alphabetical and ascending order.
+// Chapter#28
+// Converting strings to integers and decimals
+// ParsInt
+let str = "42";
+let num = parseInt(str);
+console.log(num);
+console.log(typeof num);
+// ParsFloat()
+let str2 = "42.75";
+let num2 = parseFloat(str2);
+console.log(num2); 
+console.log(typeof num2);
+// Chapter#29
+// Converting strings to numbers, numbers 
+// strings
+// Number()
+let str11 = "100";
+let str22 = "99.99";
+let num11 = Number(str11);
+let num22 = Number(str22);
+console.log(num11);
+console.log(num22); 
+// to.String()
+var numberAsNumber = 1234;
+ var numberAsString = numberAsNumber.toString();
+ console.log(numberAsNumber);
+// Chapter#30
+// Controlling the length of decimals
+// Keep to decimlal places let num = 3.14159;
+let number = 3.14159;
+let fixed = number.toFixed(2);
+console.log(fixed);
+//  Keep 0 decimal places:
+let numbers = 7.89;
+let fixed2 = numbers.toFixed(0);
+console.log(fixed2); 
+// Chapter#31
+// Getting the current date and time
+let now = new Date();
+let tomorrow = new Date("2025-06-23");
+let diff = tomorrow - now;
+let hours = Math.floor(diff / (1000 * 60 * 60));
+let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+console.log(`${hours} hours ${minutes} minutes`);
+
+
+
 
 
 
